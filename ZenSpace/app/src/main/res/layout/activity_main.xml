@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/z" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/img"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#80FFFFFF"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/companyName"
+                android:textColor="#FFF6E8B9"
+                android:textSize="40sp" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fadingEdgeLength="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/b" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/c" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/d" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/e" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#80F6E8B9"
+                android:elevation="6dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/Description"
+                android:textColor="@color/PrimaryText"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/one"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#60F6E8B9"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:text="@string/contact"
+                android:textColor="@color/SecondaryText"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/two"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#20F6E8B9"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:text="@string/Address"
+                android:textColor="@color/SecondaryText"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
